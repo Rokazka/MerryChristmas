@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.img {
+    background: url(./img/santa.jpg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%, cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: linear-gradient(143deg, #2d29471a, rgba(96, 95, 184, 0.4), rgba(144, 147, 219, 0.6), rgba(96, 95, 184, 0.4), rgba(144, 147, 219, 0.6), rgba(96, 95, 184, 0.4), rgba(144, 147, 219, 0.6), rgba(96, 95, 184, 0.4), rgba(144, 147, 219, 0.6), rgba(250, 231, 52, 0.4), rgba(224, 122, 38, 0.5), rgba(250, 231, 52, 0.4), rgba(224, 122, 38, 0.5), rgba(215, 215, 215, 0.5), rgba(255, 255, 255, 0.3));
+    background-size: 6140% 100%;
+    animation: gradient 15s ease infinite;
+}
+
+.snowh img {
+    width: 50px;
+    height: 50px;
+    transition: all 3s;
+    padding: 10px;
+    ;
+}
+
+.Two {
+    margin-top: 20px;
+}
+
+.Three {
+    margin-top: 70px;
+}
+
+.Five {
+    margin-top: -90px;
+}
+
+.Seven {
+    margin-top: 200px;
+}
+
+.Two {
+    margin-top: 20px;
+    backdrop-filter: bl;
+}
+
+.Two {
+    margin-top: 20px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 50% 90%;
+    }
+    25% {
+        background-position: 50% 90%;
+    }
+    50% {
+        background-position: 70% 20%;
+    }
+    100% {
+        background-position: 70% 40%;
+    }
+    100% {
+        background-position: 50% 40%;
+    }
+}
+
+.card-container {
+    width: 90%;
+    z-index: 100;
+    border-radius: 25px;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    background-color: red;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    animation: cardmoves 5s 1 normal forwards;
+}
+
+@keyframes cardmoves {
+    0% {
+        top: -60%;
+        display: flex;
+    }
+    100% {
+        top: 25%;
+        display: flex;
+    }
+}
+
+.card {
+    width: 100%;
+    position: absolute;
+    box-shadow: inset 90px 90px 90px rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+}
+
+.header {
+    width: 100%;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 15px 20px;
+    color: white;
+    text-shadow: 2px 2px 3px rgb(255, 3, 3);
+    box-shadow: 10px 10px 10px rgba(18, 15, 15, 0.5);
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    z-index: 66;
+    position: relative;
+    animation: moveone 2s 1 normal forwards 5s;
+    top: -20%;
+}
+
+@keyframes moveone {
+    0% {
+        top: -20%;
+    }
+    100% {
+        top: 0%;
+    }
+}
+
+.text {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 25px;
+    animation: textCome 10s ease-in infinite;
+}
+
+p {
+    padding: 20px 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 2px rgb(255, 0, 0);
+    /* animation: showColor 15s ease-in infinite; */
+    font-weight: bold;
+}
+
+p {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+}
+
+h4 {
+    font-family: "Caveat", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 1px 2px rgb(255, 0, 0);
+    padding-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes show {
+    0% {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    30% {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    40% {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    50% {
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+    70% {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    90% {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+    100% {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+}
+
+@keyframes showColor {
+    0%,
+    100% {
+        color: white;
+    }
+    30% {
+        color: gray;
+    }
+    40% {
+        color: gray;
+        ;
+    }
+    50% {
+        color: black;
+        text-shadow: 6px 2px 5px rgb(252, 252, 252);
+    }
+    60% {
+        color: black;
+        text-shadow: 6px 2px 5px rgb(252, 252, 252);
+    }
+    70% {
+        color: gray;
+    }
+    80% {
+        color: gray;
+        ;
+    }
+    90% {
+        color: black;
+        text-shadow: 6px 2px 5px rgb(252, 252, 252);
+    }
+    100%,
+    0% {
+        color: #ffff;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    p {
+        font-size: 2.3rem;
+    }
+    h4 {
+        font-size: 1.8rem;
+    }
+    .header {
+        font-size: 4.3rem;
+    }
+}
